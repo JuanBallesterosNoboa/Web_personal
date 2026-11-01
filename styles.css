@@ -1,0 +1,217 @@
+/*
+    PAGINA PERSONAL
+    Estilos CSS
+*/
+
+/*
+    Forma 1: Afectar directamente al HTML
+*/
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: #333;
+}
+
+/*
+    Encabezado de la pagina
+*/
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+/*
+    Forma 2: Afectar mediante una clase
+*/
+.contenedor {
+    background-color: white;
+    padding: 25px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/*
+    Forma 3: Afectar mediante un ID
+*/
+#titulo {
+    color: #004080;
+    text-align: center;
+}
+
+/*
+    Titulos secundarios
+*/
+h2 {
+    color: #0066aa;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/*
+    Cambia el color al pasar el mouse
+*/
+h2:hover {
+    color: #d4af37;
+}
+
+/*
+    Estilos de listas
+*/
+li {
+    margin-bottom: 8px;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+/*
+    Estilo para los campos de texto
+*/
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/*
+    Efecto al seleccionar un campo
+*/
+input[type="text"]:focus {
+    border-color: #86b7fe;
+    outline: none;
+}
+
+/*
+    CONTENEDOR DE LA CALCULADORA
+*/
+.calculadora-contenedor {
+    text-align: center;
+}
+
+/*
+    Diseño de calculadora tradicional
+*/
+.calculadora {
+    background-color: #004080;
+    width: 280px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: content-box;
+}
+
+/*
+    Pantalla de la calculadora
+*/
+#pantalla {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: right;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*
+    Organizacion de los botones
+*/
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/*
+    Botones de numeros y operaciones
+*/
+button {
+    background-color: white;
+    color: #004080;
+    font-size: 20px;
+    padding: 15px 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*
+    Efecto al pasar el mouse
+*/
+button:hover {
+    background-color: #d4af37;
+}
+
+/*
+    Boton de limpiar
+*/
+.especial {
+    background-color: #cc3333;
+    color: white;
+}
+
+/*
+    Boton igual
+*/
+.igual {
+    background-color: #d4af37;
+    color: #004080;
+    grid-row: span 2;
+}
+
+/*
+    Boton cero
+*/
+.cero {
+    grid-column: span 2;
+}
+
+/*
+    Pie de pagina
+*/
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*
+    Adaptacion para pantallas pequeñas
+*/
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .contenedor {
+        padding: 15px;
+    }
+
+    .calculadora {
+        width: 240px;
+        max-width: calc(100% - 40px);
+    }
+}
